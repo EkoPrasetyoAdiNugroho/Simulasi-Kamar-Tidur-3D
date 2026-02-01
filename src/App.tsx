@@ -6,7 +6,6 @@ import LoadingScreen from './components/LoadingScreen'
 
 function App() {
     const [isNight, setIsNight] = useState(false)
-    const [showNotification, setShowNotification] = useState(false)
 
     // Leva controls for real-time adjustments
     const { ambientIntensity, lightIntensity, shadowsEnabled } = useControls('Lighting', {
@@ -14,18 +13,6 @@ function App() {
         lightIntensity: { value: 1.5, min: 0, max: 3, step: 0.1 },
         shadowsEnabled: { value: true }
     })
-
-    const handleScreenshot = () => {
-        const canvas = document.querySelector('canvas')
-        if (canvas) {
-            const link = document.createElement('a')
-            link.download = `kamar-3d-${Date.now()}.png`
-            link.href = canvas.toDataURL('image/png')
-            link.click()
-            setShowNotification(true)
-            setTimeout(() => setShowNotification(false), 2000)
-        }
-    }
 
     return (
         <div className="canvas-container">
@@ -50,17 +37,7 @@ function App() {
                 >
                     {isNight ? '🌙 Mode Malam' : '☀️ Mode Siang'}
                 </button>
-                <button className="control-btn" onClick={handleScreenshot}>
-                    📸 Screenshot
-                </button>
             </div>
-
-            {/* Screenshot Notification */}
-            {showNotification && (
-                <div className="screenshot-notification">
-                    ✅ Screenshot tersimpan!
-                </div>
-            )}
 
             {/* 3D Canvas */}
             <Canvas
