@@ -1,5 +1,4 @@
 import { useTexture } from '@react-three/drei'
-import * as THREE from 'three'
 
 interface BedProps {
     position: [number, number, number]
