@@ -97,8 +97,8 @@ npm run preview  # Preview production build
 
 ## 👤 Author
 
-**[Nama Anda]**
-- NIM: [NIM Anda]
+**[EKO PRASETYO ADI NUGROHO]**
+- NIM: [105841114223]
 - Mata Kuliah: Grafika Komputer
 
 ## 📄 License
