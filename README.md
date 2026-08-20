@@ -1,56 +1,58 @@
-# 🏠 Simulasi Kamar Tidur 3D
+# 🏠 3D Bedroom Simulation
 
-Simulasi ruangan 3D interaktif (Kamar Tidur) menggunakan **React Three Fiber** dan **TypeScript**.
+An interactive 3D room simulation (Bedroom) built using **React Three Fiber** and **TypeScript**.
 
 ![3D Room Preview](preview.png)
 
-## ✨ Fitur
+## ✨ Features
 
-- 🎮 **Kontrol Kamera 360°** - Putar, zoom, dan jelajahi ruangan dari segala sudut
-- 🌙 **Mode Siang/Malam** - Toggle untuk mengubah suasana pencahayaan
-- 📸 **Screenshot** - Simpan tampilan 3D sebagai gambar PNG
-- 🎛️ **Panel Kontrol (Leva)** - Adjust intensitas cahaya secara real-time
-- 💡 **Lampu Meja Interaktif** - Menyala saat mode malam aktif
-- 🖼️ **Tekstur Realistis** - Lantai kayu, dinding, furniture dengan tekstur HD
+* 🎮 **360° Camera Controls** — Rotate, zoom, and explore the room from any angle
+* 🌙 **Day/Night Mode** — Toggle between different lighting environments
+* 📸 **Screenshot** — Save the current 3D view as a PNG image
+* 🎛️ **Control Panel (Leva)** — Adjust lighting intensity in real time
+* 💡 **Interactive Desk Lamp** — Turns on automatically when Night Mode is active
+* 🖼️ **Realistic Textures** — HD textures for the wooden floor, walls, and furniture
 
 ## 🛠️ Tech Stack
 
-- **React 18** + **TypeScript**
-- **Vite** - Build tool & dev server
-- **Three.js** - 3D rendering engine
-- **React Three Fiber** - React renderer untuk Three.js
-- **@react-three/drei** - Helper components
-- **Leva** - GUI controls
+* **React 18** + **TypeScript**
+* **Vite** — Build tool and development server
+* **Three.js** — 3D rendering engine
+* **React Three Fiber** — React renderer for Three.js
+* **@react-three/drei** — Helper components for React Three Fiber
+* **Leva** — GUI control panel for real-time adjustments
 
-## 📦 Instalasi
+## 📦 Installation
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/username/3d-room-react.git
 cd 3d-room-react
 
 # Install dependencies
 npm install
 
-# Jalankan development server
+# Start the development server
 npm run dev
 ```
 
-Buka browser ke `http://localhost:3000`
+Open your browser and navigate to:
 
-## 🎯 Penggunaan
+`http://localhost:3000`
 
-| Aksi | Cara |
-|------|------|
-| Putar kamera | Klik & drag mouse |
-| Zoom | Scroll mouse |
-| Mode Siang/Malam | Klik tombol "Mode Siang/Malam" |
-| Screenshot | Klik tombol "Screenshot" |
-| Adjust lighting | Buka panel Leva (kanan atas) |
+## 🎯 Usage
 
-## 📁 Struktur Project
+| Action            | How to Use                                  |
+| ----------------- | ------------------------------------------- |
+| Rotate the camera | Click and drag the mouse                    |
+| Zoom              | Scroll the mouse wheel                      |
+| Day/Night Mode    | Click the "Day/Night Mode" button           |
+| Screenshot        | Click the "Screenshot" button               |
+| Adjust lighting   | Open the Leva panel in the top-right corner |
 
-```
+## 📁 Project Structure
+
+```text
 3d-room-react/
 ├── public/
 │   ├── floor_texture.jpg
@@ -80,27 +82,29 @@ Buka browser ke `http://localhost:3000`
 └── vite.config.ts
 ```
 
-## 🎨 Transformasi 3D
+## 🎨 3D Transformations
 
-Kode menggunakan komentar khusus untuk dokumentasi transformasi:
-- `// TRANSLASI` - Perubahan posisi objek
-- `// ROTASI` - Perubahan orientasi objek  
-- `// SKALA` - Perubahan ukuran objek
+The code uses special comments to document 3D transformations:
+
+* `// TRANSLATION` — Changes the position of an object
+* `// ROTATION` — Changes the orientation of an object
+* `// SCALE` — Changes the size of an object
 
 ## 📝 Scripts
 
 ```bash
-npm run dev      # Development server
-npm run build    # Production build
-npm run preview  # Preview production build
+npm run dev      # Start the development server
+npm run build    # Build the project for production
+npm run preview  # Preview the production build
 ```
 
 ## 👤 Author
 
 **EKO PRASETYO ADI NUGROHO**
-- NIM: 105841114223
-- Mata Kuliah: Grafika Komputer
+
+* **Student ID:** 105841114223
+* **Course:** Computer Graphics
 
 ## 📄 License
 
-MIT License - Bebas digunakan untuk keperluan akademik.
+MIT License — Free to use for academic purposes.
