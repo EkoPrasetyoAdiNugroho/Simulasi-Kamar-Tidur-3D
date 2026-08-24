@@ -6,7 +6,6 @@ An interactive 3D room simulation (Bedroom) built using **React Three Fiber** an
 
 ## 🌐 Live Demo
 
-🎮 **Play LUDO GAME:**
 👉 https://simulasi-kamar-tidur-3d.vercel.app/
 
 ## ✨ Features
